@@ -1,11 +1,10 @@
 import { useState } from 'react'
-import ContactUs from './pages/ContactUs'
+import ContactUs from './pages/ContactUs/ContactUs'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
+
       <ContactUs/>
     </>
   )
