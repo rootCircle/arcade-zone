@@ -17,9 +17,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react'
 import Carousal from './pages/AboutUs/Carousal'
 // import Cards from './pages/AboutUs/Cards'
-=======
 import Register from './pages/Register/Register'
->>>>>>> 0fe980f7106442b659640caf9450e8ae9b5bc245
+
 
 function App() {
   return (
