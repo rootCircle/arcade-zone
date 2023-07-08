@@ -84,7 +84,7 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}>
+              href={'login'}>
               Sign In
             </Button>
             <Button
@@ -94,7 +94,7 @@ import {
               fontWeight={600}
               color={'white'}
               bg={'pink.400'}
-              href={'#'}
+              href={'login'}
               _hover={{
                 bg: 'pink.300',
               }}>
@@ -287,11 +287,11 @@ import {
       ],
     },
     {
-      label: 'Learn Design',
-      href: '#',
+      label: 'Team Page',
+      href: 'team',
     },
     {
-      label: 'Hire Designers',
-      href: '#',
+      label: 'Error Page',
+      href: '/error',
     },
   ];
