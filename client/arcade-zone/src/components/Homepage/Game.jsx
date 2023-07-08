@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import Categories from './Categories'
 import '../../css/Homepage/Game.css'
 
@@ -17,16 +17,16 @@ const Game = () => {
     <div className="games" id="games">
         <h1>Popular Games</h1>
         <ul>
-            <li className="list"  onClick={() => setData(Categories)}>All</li>
-            <li className="list" onClick={() => filterResult('pc')}>Pc games</li>
-            <li className="list"  onClick={() => filterResult('mobile')}>Mobile games</li>
+            <li key="all" className="list"  onClick={() => setData(Categories)}>All</li>
+            <li key="pcgame" className="list" onClick={() => filterResult('pc')}>Pc games</li>
+            <li key="mobile" className="list"  onClick={() => filterResult('mobile')}>Mobile games</li>
         </ul>
         
         <div className="cardBx">        
           {data.map((values) =>{
                 const {id, title, rating, image} = values;
                 return (
-                    <>
+                    <Fragment key={id}>
                         <div className="card" key={id}>
                            <img src={image} alt="" />
                             <div className="content">
@@ -38,7 +38,7 @@ const Game = () => {
                                 </div>
                             </div>
                         </div>  
-                    </>
+                    </Fragment>
                 )
             })}
 
