@@ -1,0 +1,77 @@
+.contact{
+    margin-top: 7vh;
+    padding: 20px 100px;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img{
+    height: 500px;
+    width: 55%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact .form{
+    width: 50%;
+    margin: 40px;
+    padding: 20px;
+}
+
+.contact .form h1{
+    color: #fff;
+}
+
+.contact .form .inputBx{
+    margin: 20px 0;
+}
+
+.contact .form .inputBx p{
+   color: #fff;
+   font-weight: 400;
+   margin: 4px;
+}
+
+
+.contact .form .inputBx input,
+
+.contact .form .inputBx textarea{
+    border: none;
+    border-radius: 5%;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background: #1b2141;
+    min-height: 15px;
+    font-size: 1.1rem;
+}
+
+.contact .form .inputBx textarea{
+    height: 80px;
+}
+
+.contact .form .inputBx input[type="submit"]{
+   display: inline;
+   padding: 10px 20px;
+   margin: 15px 0;
+   outline: none;
+   background: transparent;
+   border: 1px solid #1aeeef;
+   text-decoration: none;
+   font-weight: 700;
+   width: 150px;
+   border-radius: 5px;
+   color: #fff;
+   letter-spacing: 1px;
+}
+
+.contact .form .inputBx input[type="submit"]:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
