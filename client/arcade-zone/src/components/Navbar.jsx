@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {
     Box,
     Flex,
@@ -94,7 +92,7 @@ import {
               fontWeight={600}
               color={'white'}
               bg={'pink.400'}
-              href={'/login'}
+              href={'/register'}
               _hover={{
                 bg: 'pink.300',
               }}>
@@ -107,6 +105,7 @@ import {
           <MobileNav />
         </Collapse>
       </Box>
+
     );
   }
   
@@ -272,17 +271,22 @@ import {
       ],
     },
     {
-      label: 'Find Work',
+      label: 'Account',
       children: [
         {
-          label: 'Job Board',
+          label: 'Reset Account',
           subLabel: 'Find your dream design job',
-          href: '#',
+          href: '/account/reset',
         },
         {
-          label: 'Freelance Projects',
+          label: 'Forgot Password',
           subLabel: 'An exclusive list for contract work',
-          href: '#',
+          href: '/forgotAccount',
+        },
+        {
+          label: 'Verify Account',
+          subLabel: 'An exclusive list for contract work',
+          href: '/login/verify',
         },
       ],
     },
