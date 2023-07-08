@@ -10,7 +10,8 @@
     margin: 40px auto;
 }
 
-.games h2{
+.games h1{
+    font-size: 40px;
     color: #fff;
     margin: 10px 0;
 }

@@ -15,7 +15,7 @@ const Game = () => {
 
   return (
     <div className="games" id="games">
-        <h2>Popular Games</h2>
+        <h1>Popular Games</h1>
         <ul>
             <li className="list"  onClick={() => setData(Categories)}>All</li>
             <li className="list" onClick={() => filterResult('pc')}>Pc games</li>
@@ -30,7 +30,7 @@ const Game = () => {
                         <div className="card" key={id}>
                            <img src={image} alt="" />
                             <div className="content">
-                               <h4>{title}</h4>
+                               <h2>{title}</h2>
                                 <div className="progress-line"><span></span></div>
                                    <div className="info">
                                    <p>Rating <br/> <span>⭐ {rating}</span></p>

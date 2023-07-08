@@ -13,7 +13,7 @@ const Banner = () => {
                 <p>Are you ready to embark on an exhilarating gaming adventure?
                 Join us at GameLair and get ready to immerse yourself in a world of gaming excitement. 
                 </p>
-                <a href="#" className='btn'>Join Now</a>~
+                <a href="#" className='btn'>Join Now</a>
             </div>
             <img src={img} alt="" />
         </div>
