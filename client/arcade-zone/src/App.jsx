@@ -2,19 +2,21 @@ import ContactUs from './pages/ContactUs/ContactUs'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Login from './pages/Login/Login'
-// import LoginTest from './pages/Login/LoginTest'
-// import AuthLayout from './layouts/Auth'
-// import Navbar2 from './components/Navbars/AuthNavbar'
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react'
+
 function App() {
   return (
     <>
       <Navbar/>
-      {/* <ContactUs/> */}
-      <Login/>
-      {/* <AuthLayout /> */}
-      {/* <Navbar2/> */}
-      {/* <LoginTest/> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login/>}/>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/team" element={<ContactUs/>}/>
+        </Routes>
+      </BrowserRouter>
       <Footer/>
     </>
   )
