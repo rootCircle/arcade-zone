@@ -4,7 +4,7 @@ import img1 from '../../assets/images/about.jpg'
 
 const About = () => {
   return (
-    <div className={style["about"]} id={style["about"]}>
+    <div className={`${style["about"]} flex`} id={style["about"]}>
          {<img src={img1} alt="" />} 
         <div className={style["contentBx"]}>
             <h3>About Us</h3>
