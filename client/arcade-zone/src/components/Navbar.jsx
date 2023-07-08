@@ -84,7 +84,7 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'login'}>
+              href={'/login'}>
               Sign In
             </Button>
             <Button
@@ -94,7 +94,7 @@ import {
               fontWeight={600}
               color={'white'}
               bg={'pink.400'}
-              href={'login'}
+              href={'/login'}
               _hover={{
                 bg: 'pink.300',
               }}>
@@ -288,7 +288,7 @@ import {
     },
     {
       label: 'Team Page',
-      href: 'team',
+      href: '/team',
     },
     {
       label: 'Error Page',
