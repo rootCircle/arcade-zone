@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import ErrorStyle from '../../css/Error404.module.css'
+import StarsCanvas from '../../components/Stars';
 
 function Error404() {
   const [particles, setParticles] = useState([]);
@@ -49,13 +50,15 @@ function Error404() {
     });
   };
 
-  return (
+  return (<>
     <div className={ErrorStyle["container"]}>
-      <div className={ErrorStyle["particle-container"]}>{renderParticles()}</div>
+      <StarsCanvas/>
+      {/* <div className={ErrorStyle["particle-container"]}>{renderParticles()}</div> */}
       <div className={ErrorStyle["error-text"]}>
         404 - There is nothing to see here<br/>
         This page does not exist</div>
     </div>
+  </>
   );
 };
 
