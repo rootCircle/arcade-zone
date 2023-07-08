@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import ErrorStyle from '../../css/Error404.module.css'
 

@@ -1,4 +1,7 @@
 // Source : https://chakra-templates.dev/page-sections/footer
+import React from 'react';
+
+
 import {
     Box,
     chakra,
