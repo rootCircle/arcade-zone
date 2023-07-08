@@ -1,12 +1,12 @@
 import React from 'react'
-import '../../css/Homepage/About.css'
+import style from '../../css/Homepage/About.module.css'
 import img1 from '../../assets/images/about.jpg'
 
 const About = () => {
   return (
-    <div className="about" id="about">
+    <div className={style["about"]} id={style["about"]}>
          {<img src={img1} alt="" />} 
-        <div className="contentBx">
+        <div className={style["contentBx"]}>
             <h3>About Us</h3>
             <p>At GameLair, we understand that gaming is more fun when you can share the experience with others. That's why we've integrated a robust multiplayer feature into our platform. Connect with friends and gamers from across the globe, form teams, and compete in thrilling multiplayer battles.Whether you're playing cooperatively or engaging in intense PvP matches, GameLair provides an interactive and social gaming experience like no other.
 
