@@ -10,6 +10,7 @@ import ResetPassword from './pages/ForgotPassword/ResetPassword'
 import VerifyAccount from './pages/Register/VerifyAccount'
 import Error404 from './pages/Error404/Error404'
 import Register from './pages/Register/Register'
+import Homepage from './pages/Homepage/HomePage'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Navbar/>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login/>}/>
+          <Route path="/" element={<Homepage/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/team" element={<ContactUs/>}/>
           <Route path="/forgotAccount" element={<ForgotPassword/>}/>
