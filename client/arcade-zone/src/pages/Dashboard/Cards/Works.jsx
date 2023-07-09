@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import "./gradient.css"
 import { styles } from "./styles";
 import { fadeIn, textVariant } from "./utils/motion";
+import { Box } from "@chakra-ui/react";
+import NoResultFound from "../../../components/Dashboard/NoResultFound";
 
 const ProjectCard = ({
     index,
@@ -53,15 +55,17 @@ const ProjectCard = ({
 
 const Works = (props) => {
     return (
-        <>
-            <div className='mt-20 flex flex-wrap gap-7'>
-                {props.data.map((project, index) => (
-                    <ProjectCard key={`project-${index}`} index={index} {...project} />
-                ))}
+        <Box alignItems={'center'} justifyContent={'center'}>
+            <div className='mt-20 flex flex-wrap gap-7 items-center justify-center' >
+                {(props.data.length === 0) ? <NoResultFound /> : (
+                    props.data.map((project, index) => (
+                        <ProjectCard key={`project-${index}`} index={index} {...project} />
+                    )))
+                }
 
             </div>
 
-        </>
+        </Box>
     );
 };
 

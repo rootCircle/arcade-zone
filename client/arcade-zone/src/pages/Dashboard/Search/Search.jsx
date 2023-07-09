@@ -3,31 +3,25 @@ import {
   FormLabel,
   FormErrorMessage,
   FormHelperText,
+  Flex,
   Input
 } from '@chakra-ui/react'
 
-import { useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 
 
-function Search() {
-  const [input, setInput] = useState('')
+function Search({onChange, input, setInput}) {
 
-  const handleInputChange = (e) => setInput(e.target.value)
-
-  const isError = input === ''
 
   return (
-    <FormControl isInvalid={isError}>
-      <FormLabel>Email</FormLabel>
-      <Input type='email' value={input} onChange={handleInputChange} />
-      {!isError ? (
-        <FormHelperText>
-          Enter the email you'd like to receive the newsletter on.
-        </FormHelperText>
-      ) : (
-        <FormErrorMessage>Email is required.</FormErrorMessage>
-      )}
-    </FormControl>
+    <>
+    <Flex flex={1} align={'center'} justify={'center'}>
+      <FormControl p={8} width={'70vw'}>
+        <FormLabel>Search Game</FormLabel>
+        <Input type='text' value={input} onChange={onChange} />
+      </FormControl>
+      </Flex>
+    </>
   )
 }
 
