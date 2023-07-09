@@ -23,9 +23,11 @@
 }
 
 .contact .form{
-    width: 50%;
+    width: 40%;
     margin: 40px;
-    /* padding: 20px; */
+    background-color: #171923a9;
+    border-radius: 10px;
+    padding: 33px 70px;
 }
 
 .contact .form h1{
@@ -74,11 +76,14 @@
    border-radius: 5px;
    color: #fff;
    letter-spacing: 1px;
+   padding: 5px;
+   transition: all 0.3s;
+   
 }
 
 .contact .form .inputBx input[type="submit"]:hover{
     background: #1aeeef;
-    border: none;
+    /* border: none; */
     color: #050e2d;
     box-shadow: 0 0 10px #1aeeef;
 }

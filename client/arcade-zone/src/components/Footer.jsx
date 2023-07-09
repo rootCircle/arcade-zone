@@ -125,7 +125,7 @@ import {
                     bg: 'whiteAlpha.300',
                   }}
                 />
-                <IconButton
+                <a href='mailto:devfrolics@gmail.com'><IconButton
                   bg={useColorModeValue('green.400', 'green.800')}
                   color={useColorModeValue('white', 'gray.800')}
                   _hover={{
@@ -133,7 +133,7 @@ import {
                   }}
                   aria-label="Subscribe"
                   icon={<BiMailSend />}
-                />
+                /></a>
               </Stack>
             </Stack>
           </SimpleGrid>
