@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/login" element={<Login/>}/>
-          <Route path="/team" element={<ContactUs/>}/>
+          {/* <Route path="/team" element={<ContactUs/>}/> */}
           <Route path="/card" element={<Works/>}/>
           <Route path="/carousel" element={<Carousel/>}/>
           <Route path="/forgotAccount" element={<ForgotPassword/>}/>
@@ -40,6 +40,7 @@ function App() {
           {/* <Route path="/Cards" element={<Cards/>} /> */}
           {/* <Route path="/Carousal" element={<Carousal/>} /> */}
           <Route path="/Aboutus" element={<AboutUs/>} />
+          <Route path="/Contactus" element={<ContactUs />}/>
           
         </Routes>
       </BrowserRouter>

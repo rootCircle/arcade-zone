@@ -55,7 +55,7 @@
 
 .flex1 {
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
   border: 2px solid #ff00ff;
   box-shadow: 0 0 20px #ff00ff;
   margin-top: 10rem;
@@ -64,7 +64,7 @@
 
 .flex2 {
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
   border: 2px solid #ff4800fd;
   box-shadow: 0 0 20px #ff0000;
 
@@ -72,7 +72,7 @@
 
 .flex3 {
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
   border: 2px solid #00c8fffd;
   box-shadow: 0 0 20px #2b00ff;
 
@@ -80,7 +80,7 @@
 
 .flex4 {
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(100px);
   border: 2px solid #00ff44fd;
   box-shadow: 0 0 20px #aeff00;
   margin-bottom: 10rem;
@@ -106,7 +106,7 @@
 .neontext3 {
   color: #00c8fffd;
   text-shadow: 0 0 10px #2b00ff;
-  font-size: larger;
+  font-size: large;
   align-content: center;
 }
 
@@ -119,9 +119,15 @@
 
 .main-container {
 
-  background-image: url(https://cdn.wallpapersafari.com/31/86/tDf3TW.png);
+  background-image: url(https://c0.wallpaperflare.com/preview/153/380/988/headphones-red-black-dark.jpg);
+  
   background-repeat: no-repeat;
   background-size:cover;
-  z-index: 1000;
+  background-clip: inherit;
+  /* background-blend-mode: darken; */
+  z-index: 100;
+  -webkit-filter: blur(10px);
+  filter: blur(0px);
+  display: flow-root;
 
 }

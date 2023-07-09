@@ -10,7 +10,7 @@
 //   Text,
 // } from "@chakra-ui/react";
 // import React from "react";
-import styles from "../../css/Cards.module.css";
+import styles from "../../css/AboutUS/Cards.module.css";
 
 // function Cards() {
 //   return (
@@ -181,10 +181,9 @@ import React from "react";
 function Cards() {
   return (
     <div className={styles["main-container"]}>
-      <div></div>
       <div className={`${styles["main1"]} flex justify-center items-center`}>
         <div
-          className={`${styles["flex1"]} flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
+          className={`${styles["flex1"]} flex flex-col rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
         >
           <img
             className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -193,7 +192,7 @@ function Cards() {
           />
           <div className="flex flex-col justify-start p-6">
             <h5
-              className={`${styles["neontext1"]} mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50`}
+              className={`${styles["neontext1"]} mb-2 text-xl font-medium `}
             >
               Card title
             </h5>
@@ -208,7 +207,7 @@ function Cards() {
 
       <div className={`${styles["main2"]} flex justify-center items-center`}>
         <div
-          className={`${styles["flex2"]} flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
+          className={`${styles["flex2"]} flex flex-col rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
         >
           <img
             className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -217,7 +216,7 @@ function Cards() {
           />
           <div className="flex flex-col justify-start p-6">
             <h5
-              className={`${styles["neontext2"]} mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50`}
+              className={`${styles["neontext2"]} mb-2 text-xl font-medium `}
             >
               Card title
             </h5>
@@ -232,7 +231,7 @@ function Cards() {
 
       <div className={`${styles["main1"]} flex justify-center items-center`}>
         <div
-          className={`${styles["flex3"]} flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
+          className={`${styles["flex3"]} flex flex-col rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
         >
           <img
             className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -241,7 +240,7 @@ function Cards() {
           />
           <div className="flex flex-col justify-start p-6">
             <h5
-              className={`${styles["neontext3"]} mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50`}
+              className={`${styles["neontext3"]} mb-2 text-xl font-medium `}
             >
               Card title
             </h5>
@@ -256,7 +255,7 @@ function Cards() {
 
       <div className={`${styles["main2"]} flex justify-center items-center`}>
         <div
-          className={`${styles["flex4"]} flex flex-col rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
+          className={`${styles["flex4"]} flex flex-col rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 max-w-3xl md:flex-row px-8 py-6`}
         >
           <img
             className="h-96 w-full rounded-t-lg object-cover md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
@@ -265,7 +264,7 @@ function Cards() {
           />
           <div className="flex flex-col justify-start p-6">
             <h5
-              className={`${styles["neontext4"]} mb-2 text-xl font-medium text-neutral-800 dark:text-neutral-50`}
+              className={`${styles["neontext4"]} mb-2 text-xl font-medium `}
             >
               Card title
             </h5>
