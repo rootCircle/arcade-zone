@@ -9,18 +9,10 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { CopyIcon, ChatIcon, BellIcon } from "@chakra-ui/icons";
 import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
   Flex,
   Avatar,
-  Box,
-  Heading,
   Button,
   Text,
-  Image,
-  Center,
 } from "@chakra-ui/react";
 import {
   Modal,
@@ -31,14 +23,10 @@ import {
   ModalBody,
   ModalCloseButton,
   useDisclosure,
-  IconButton,
   FormControl,
   FormLabel,
   HStack,
-  Stack,
-  Divider,
-  ButtonGroup,
-  Textarea,
+
 } from "@chakra-ui/react";
 import {
   BiLike,
@@ -133,9 +121,9 @@ function GamingPage(props) {
                 />
                 <Text flex={1} alignItems={"center"} display={"flex"} >
 
-                  <div style={{textWrap:"nowrap" , fontWeight:"bolder"}}>
+                  <span style={{whiteSpace:"nowrap" , fontWeight:"bolder"}}>
                     {props.name}
-                  </div>
+                  </span>
                 </Text>
                 <Button
                   flex="1"
