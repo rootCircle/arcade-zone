@@ -1,30 +1,47 @@
- import ContactUs from './pages/ContactUs/ContactUs'
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Importing Pages
+import ContactUs from './pages/ContactUs/ContactUs'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Login from './pages/Login/Login'
+import ForgotPassword from './pages/ForgotPassword/ForgotPassword'
+import ResetPassword from './pages/ForgotPassword/ResetPassword'
+import VerifyAccount from './pages/Register/VerifyAccount'
 import Error404 from './pages/Error404/Error404'
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AboutUs from './pages/AboutUs/AboutUs'
 import React from 'react'
 import GamingPage from './pages/GamingPage/GamingPage'
 import GamingReview from './pages/GamingPage/GamingReview'
+import Carousel from './components/Carousel/Carousel'
+import Register from './pages/Register/Register'
+import Homepage from './pages/Homepage/HomePage'
+import Blog from './pages/Blog/Blog'
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
     <>
-      <Navbar/>
-      {/* <BrowserRouter>
+       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Login/>}/>
-          <Route path="/login" element={<Login/>}/>
-          <Route path="/team" element={<ContactUs/>}/>
-          <Route path="*" element={<Error404/>} />
+          <Route exact path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/carousel" element={<Carousel />} />
+          <Route path="/forgotAccount" element={<ForgotPassword />} />
+          <Route path="/login/verify" element={<VerifyAccount />} />
+          <Route path="/account/reset" element={<ResetPassword />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<AboutUs/>}/>
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/home" element={<Dashboard />}/>
+          <Route path="/game" element={<GamingPage link="https://paper-io.com/?mode=paper2" name="HOT Game"/>} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
-      </BrowserRouter> */}
-      <GamingPage link="https://paper-io.com/?mode=paper2" name="HOT Game"/> 
-      {/* <GamingReview/>
-      <GamingReview/> */}
-      <Footer/>
+        <Footer />
+      </BrowserRouter>
     </>
   )
 }

@@ -1,6 +1,16 @@
+/* .tailwind-layout {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+} */
+
+/* @config "./tailwindcss-config.js"; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root  {
   width: 100%;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

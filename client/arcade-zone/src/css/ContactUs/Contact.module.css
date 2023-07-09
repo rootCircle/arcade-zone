@@ -320,3 +320,12 @@ body {
         line-height: 88px;
     }
 }
+
+.heading{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-size: 5rem;
+    padding: 2rem;
+    margin: 1rem;
+}

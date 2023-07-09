@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #050e2d;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #1aeeef;
+    border-radius: 6px;
+}
+.banner{
+    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content{
+    width: 50%;
+    margin-right: 20px;
+    height: 100%;
+    backdrop-filter:blur(3px);
+}
+.banner .bg .content h2{
+    font-size: 4rem;
+    margin-bottom:10px;
+    line-height: 4.2rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p{
+    font-size: 1rem;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+.banner .bg img{
+    width: 650px;
+}
