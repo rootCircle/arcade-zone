@@ -4,10 +4,11 @@ import img21 from '../../assets/images/contact.jpg'
 
 const Contact = () => {
   return (
+    <>        
+    <h1>Contact Us</h1>
     <div className={style["contact"]} id={style["contact"]}>
         {<img src={img21} alt="" />}
         <div className={style["form"]}>
-            <h1>Contact Us</h1>
             <div className={style["inputBx"]}>
                 <p>Enter Name</p>
                 <input type="text" placeholder='Full Name' />
@@ -25,6 +26,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
+    </>
   )
 }
 
