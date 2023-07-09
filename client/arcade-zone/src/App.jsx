@@ -18,6 +18,8 @@ import Blog from './pages/Blog/Blog'
 import Gallery from './pages/Gallery/Gallery';
 import Dashboard from "./pages/Dashboard/Dashboard";
 import AdminForm from "./pages/AdminForm/AdminForm"
+import GamingPage from './pages/GamingPage/GamingPage'
+import GamingReview from './pages/GamingPage/GamingReview'
 
 function App() {
   return (
@@ -38,6 +40,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/home" element={<Dashboard />}/>
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/game" element={<GamingPage link="https://paper-io.com/?mode=paper2" name="HOT Game"/> }/>
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
