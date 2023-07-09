@@ -45,6 +45,7 @@ function App() {
           <Route path="/game" element={<GamingPage link="https://paper-io.com/?mode=paper2" name="HOT Game"/> }/>
           <Route path="*" element={<Error404 />} />
           <Route path="/gallery" element={<Gallery/>} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
       </BrowserRouter>

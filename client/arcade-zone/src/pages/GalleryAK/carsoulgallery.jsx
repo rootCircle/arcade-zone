@@ -23,7 +23,7 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function carousalgallery() {
+export default function CarousalGallery() {
   const [slider, setSlider] = React.useState(null);
 
   const top = useBreakpointValue({ base: "90%", md: "50%" });
@@ -77,6 +77,7 @@ export default function carousalgallery() {
       image:
         "https://c4.wallpaperflare.com/wallpaper/780/420/942/resident-evil-8-village-resident-evil-video-games-chris-redfield-artwork-hd-wallpaper-preview.jpg",
       color: "#F97B22",
+      
     },
     {
       title: "GOD of WAR",
