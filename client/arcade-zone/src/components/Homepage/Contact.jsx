@@ -3,6 +3,7 @@ import style from '../../css/Homepage/Contact.module.css'
 import img21 from '../../assets/images/contact.jpg'
 
 const Contact = () => {
+
   return (<>
             <h1 style={{"fontSize":"38px","textAlign":"center", "marginTop":"15vmin"}}>Contact Us</h1>
       <p style={{ "fontSize": "22px", "textAlign": "center", "marginTop": "1vmin" }}>Share your Views and Opinions with Us</p>
@@ -26,8 +27,7 @@ const Contact = () => {
             </div>
         </div>
     </div>
-  </>
-
+    </>
   )
 }
 

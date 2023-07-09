@@ -81,9 +81,6 @@ const Works = () => {
                 >
                     Mahesh Dalle !!<br/>
                     Bete Dalle Pe Ni Baap Tera Dalla Aa,
-                    L*da Hukka Mera Mamta Meri Challa Aa,
-                    Mamta N*g Leti Baap Kithe Challa Aa,
-                    Meta Bhul Gaya Siki Baap Nalla Aa
                 </motion.p>
             </div>
 
