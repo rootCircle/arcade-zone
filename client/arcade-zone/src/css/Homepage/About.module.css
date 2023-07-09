@@ -1,11 +1,13 @@
 .about{
-    position: relative;
-    width: 100%;
+    /* position: relative; */
+    /* width: 100%; */
     min-height: 75vh;
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     display: flex;
     justify-content: center;
     align-items: center; 
+    margin-top: 5vmin;
+    gap: 10vmax;
 }
 
 .about img {
@@ -13,8 +15,8 @@
 }
 
 .about .contentBx{
-    width: 50%;
-    margin: 50px;
+    /* width: 50%;
+    margin: 50px; */
 }
 
 .about .contentBx h3{

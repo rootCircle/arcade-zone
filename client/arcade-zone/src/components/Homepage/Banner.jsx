@@ -4,9 +4,10 @@ import img from '../../assets/images/banner.jpeg'
 
 const Banner = () => {
   return (
-    <div className={style['banner']} id={style["home"]}>
+    <div className={`${style['banner']} flex flex-col-reverse`} id={style["home"]}>
+            <img src={img} alt="" style={{"position":"absolute", "opacity":0.3,"zIndex":-1}}/>
         <div className={style["bg"]}>
-            <div className={style["content"]}>
+            <div className={style["content"]} >
                 <h2>A New Home For <br/>
                 Game Lovers
                 </h2>
@@ -15,7 +16,6 @@ const Banner = () => {
                 </p>
                 <a href="#" className={style["btn"]}>Join Now</a>
             </div>
-            <img src={img} alt="" />
         </div>
     </div>
   )
