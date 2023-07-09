@@ -16,7 +16,10 @@ import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
 import Blog from './pages/Blog/Blog'
 import Gallery from './pages/Gallery/Gallery';
-import Dashboard from "./pages/Dashboard/DashBoardMain";
+import Dashboard from "./pages/Dashboard/Dashboard";
+import AdminForm from "./pages/AdminForm/AdminForm"
+import GamingPage from './pages/GamingPage/GamingPage'
+
 
 function App() {
   return (
@@ -35,6 +38,9 @@ function App() {
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/blog" element={<Blog />} />
           <Route path="/home" element={<Dashboard />}/>
+          <Route path="/gallery" element={<Gallery/>} />
+          <Route path="/game" element={<GamingPage link="https://paper-io.com/?mode=paper2" name="HOT Game"/> }/>
+          <Route path="/admin/form" element={<AdminForm />} />
           <Route path="/gallery" element={<Gallery/>} />
           <Route path="*" element={<Error404 />} />
         </Routes>

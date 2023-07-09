@@ -308,6 +308,16 @@ const NAV_ITEMS = [
         subLabel: 'An exclusive list for contract work',
         href: '/gallery',
       },
+      {
+        label: 'Game',
+        subLabel: 'An exclusive list for contract work',
+        href: '/game',
+      },
+      {
+        label: 'Admin Dashboard',
+        subLabel: 'An exclusive list for contract work',
+        href: '/admin/form',
+      },
     ],
   },
   {
