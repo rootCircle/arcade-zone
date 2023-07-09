@@ -164,7 +164,7 @@ const ArticleList = () => {
             <Divider marginTop="5" />
             <Wrap spacing="30px" marginTop="5">
                 <BlogCard
-                    imageURL="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    imageURL="https://media.geeksforgeeks.org/wp-content/uploads/s2-1.jpg"
                     title="Linux"
                     content="If you're new to Linux, this beginner's guide offers a comprehensive
                              introduction to the operating system, covering its key
@@ -177,7 +177,7 @@ const ArticleList = () => {
                 />
 
                 <BlogCard
-                    imageURL="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    imageURL="https://www.askbayou.com/wp-content/uploads/2021/05/1492055085222032603.jpg"
                     title="Tweaks"
                     content="Some useful Tweaks that might change your life. 
                             Based on multi year experience developers' experience."
@@ -188,7 +188,7 @@ const ArticleList = () => {
                 />
 
                 <BlogCard
-                    imageURL="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    imageURL="https://shethink.in/wp-content/uploads/2021/07/react.js-img.png"
                     title="Dark Art of decreasing react-app initialization time"
                     content="Making cra pay its price. Optimizes react init time by over 200%.
                             Discusses workarounds and alternative to cra."
@@ -199,7 +199,7 @@ const ArticleList = () => {
                 />
 
                 <BlogCard
-                    imageURL="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    imageURL="https://fireship.io/lessons/regex-cheat-sheet-js/img/featured.png"
                     title="Regex 101"
                     content="Regex (regular expressions) is a powerful tool for pattern matching
                              and manipulating text. This beginner's guide introduces you
@@ -212,7 +212,7 @@ const ArticleList = () => {
                 />
 
                 <BlogCard
-                    imageURL="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    imageURL="https://raw.githubusercontent.com/GeneKao/programming-notes/master/git/img/git-1-1.bmp"
                     title="git for beginners"
                     content="If you're new to Git, this beginner's guide will help 
                             understand the basics of version control and how to get started with
