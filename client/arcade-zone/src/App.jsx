@@ -10,9 +10,7 @@ import ResetPassword from './pages/ForgotPassword/ResetPassword'
 import VerifyAccount from './pages/Register/VerifyAccount'
 import Error404 from './pages/Error404/Error404'
 import AboutUs from './pages/AboutUs/AboutUs'
-import Cards from './pages/AboutUs/Cards'
 import React from 'react'
-import Carousal from './pages/AboutUs/Carousal'
 import Works from './pages/Cards/Works'
 import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
@@ -28,7 +26,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/team" element={<ContactUs />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/card" element={<Works />} />
           <Route path="/carousel" element={<Carousel />} />
           <Route path="/forgotAccount" element={<ForgotPassword />} />

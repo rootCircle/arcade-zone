@@ -1,4 +1,4 @@
-import styles from '../../css/Details.module.css'
+import styles from '../../css/ContactUs/Contact.module.css'
 
 function Details() {
     return (

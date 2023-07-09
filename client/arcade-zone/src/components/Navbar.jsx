@@ -273,6 +273,11 @@ const NAV_ITEMS = [
         subLabel: 'Up-and-coming Designers',
         href: '/blog',
       },
+      {
+        label: 'About US',
+        subLabel: 'Up-and-coming Designers',
+        href: '/about',
+      },
     ],
   },
   {
@@ -296,8 +301,8 @@ const NAV_ITEMS = [
     ],
   },
   {
-    label: 'Team Page',
-    href: '/team',
+    label: 'Contact Us',
+    href: '/contact',
   },
   {
     label: 'Error Page',
