@@ -18,12 +18,12 @@ function Cards() {
             <h5
               className={`${styles["neontext1"]} mb-2 text-xl font-medium `}
             >
-              Card title
+              smart work
             </h5>
             <p className={`${styles["neontext1"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            Through collaboration, teams become more than the sum of their parts.
+             They become a unified force, capable of accomplishing remarkable feats. Whether it's in sports, 
+             business, or any other endeavor, the power of teamwork is undeniable.
             </p>
           </div>
         </div>
@@ -42,12 +42,12 @@ function Cards() {
             <h5
               className={`${styles["neontext2"]} mb-2 text-xl font-medium `}
             >
-              Card title
+              hard work
             </h5>
             <p className={`${styles["neontext2"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            emphasizing its transformative power and its ability to turn goals into tangible outcomes. 
+            It acknowledges that hard work is the driving force behind success, highlighting its importance 
+            in the pursuit of one's dreams
             </p>
           </div>
         </div>
@@ -66,12 +66,11 @@ function Cards() {
             <h5
               className={`${styles["neontext3"]} mb-2 text-xl font-medium `}
             >
-              Card title
+              leadership
             </h5>
             <p className={`${styles["neontext3"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            A true leader leads by example, demonstrating integrity, humility, and empathy in their interactions
+             with others.
             </p>
           </div>
         </div>
@@ -90,12 +89,11 @@ function Cards() {
             <h5
               className={`${styles["neontext4"]} mb-2 text-xl font-medium `}
             >
-              Card title
+              games
             </h5>
             <p className={`${styles["neontext4"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            "Games have the remarkable ability to transport us to new worlds, ignite our imagination, and unleash 
+            our inner adventurers."
             </p>
           </div>
         </div>
