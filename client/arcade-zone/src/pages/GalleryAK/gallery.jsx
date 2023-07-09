@@ -1,14 +1,16 @@
 import React from "react";
 import GalleryVideo from "./GalleryVideo";
-import Carousl from "./carsoulgallery";
+import Carousal from "./CarsoulGallery";
+import StaticImg from "./staticimg";
 
-function gallery() {
+function Gallery() {
   return (
     <>
       <GalleryVideo />
-      <Carousl />
+      <Carousal />
+      <StaticImg />
     </>
   );
 }
 
-export default gallery;
+export default Gallery;
