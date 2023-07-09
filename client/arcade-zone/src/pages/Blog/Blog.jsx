@@ -229,16 +229,15 @@ const ArticleList = () => {
             <VStack paddingTop="5rem" spacing="2" alignItems="flex-start">
                 <Heading as="h2">What we write about</Heading>
                 <Text as="p" fontSize="lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                    condimentum quam arcu, eu tempus tortor molestie at. Vestibulum
-                    pretium condimentum dignissim. Vestibulum ultrices vitae nisi sed
-                    imperdiet.
+                Teamwork is the cornerstone of success and achievement. When individuals come together, united
+                 by a common purpose and shared goals, the possibilities become endless. In a collaborative 
+                 environment, strengths are amplified, weaknesses are supported, and diversity of perspectives 
+                 leads to innovative solutions.
                 </Text>
                 <Text as="p" fontSize="lg">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-                    condimentum quam arcu, eu tempus tortor molestie at. Vestibulum
-                    pretium condimentum dignissim. Vestibulum ultrices vitae nisi sed
-                    imperdiet.
+                So, embrace the spirit of collaboration, foster strong relationships, and create an atmosphere
+                 that encourages teamwork. By working together, we can achieve extraordinary things and make a 
+                 lasting impact in our shared pursuits.
                 </Text>
             </VStack>
         </Container>

@@ -3,7 +3,9 @@ import style from '../../css/Homepage/About.module.css'
 import img1 from '../../assets/images/about.jpg'
 
 const About = () => {
-  return (
+  return (<>
+
+  <br /><br /><br /><br /><br /><br />
     <div className={`${style["about"]} flex`} id={style["about"]}>
          {<img src={img1} alt="" />} 
         <div className={style["contentBx"]}>
@@ -14,6 +16,8 @@ Our website is designed to be user-friendly and intuitive, ensuring that you can
             <a href="#">Read more</a>
         </div>
     </div>
+
+  </>
   )
 }
 
