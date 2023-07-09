@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.tournaments h2{
+    font-size: 40px;
+    color: #fff;
+    margin: 10px 0;
+}
+
 .contact img{
     height: 500px;
     width: 55%;

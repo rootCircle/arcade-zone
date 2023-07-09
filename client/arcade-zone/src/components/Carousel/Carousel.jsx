@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import style from "./Carousel.module.css";
 
+
 const Carousel = () => {
     'use strict';
 
@@ -67,7 +68,7 @@ const Carousel = () => {
 
     return (
         <>
-        <h1>NIMESH RANDI DURGE</h1>
+        <h1>Test Carousel App</h1>
         <section className={`${style.topics}`} id="topics" aria-labelledby="topic-label">
             <div className={`${style.container} ${style["w-7/12"]}`}>
                 <div className={`${style.card} flex p-10 px-0 pr-10`}>
