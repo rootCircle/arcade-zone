@@ -1,10 +1,8 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 import "./gradient.css"
 import { styles } from "./styles";
-import { SectionWrapper } from "./hoc";
-import { projects } from "./constants";
 import { fadeIn, textVariant } from "./utils/motion";
 
 const ProjectCard = ({
@@ -31,19 +29,6 @@ const ProjectCard = ({
                         alt='project_image'
                         className='w-full h-full object-cover rounded-2xl'
                     />
-
-                    <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-                        <div
-                            onClick={() => window.open(source_code_link, "_blank")}
-                            className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-                        >
-                            <img
-                                src=""
-                                alt='source code'
-                                className='w-1/2 h-1/2 object-contain'
-                            />
-                        </div>
-                    </div>
                 </div>
 
                 <div className='mt-5'>
@@ -66,32 +51,18 @@ const ProjectCard = ({
     );
 };
 
-const Works = () => {
+const Works = (props) => {
     return (
         <>
-            <motion.div variants={textVariant()}>
-                <p className={`${styles.sectionSubText} `}>THE ESTEEMED</p>
-                <h2 className={`${styles.sectionHeadText}`} style={{ textAlign: "left" }}>RANDI NIMESH</h2>
-            </motion.div>
-
-            <div className='w-full flex'>
-                <motion.p
-                    variants={fadeIn("", "", 0.1, 1)}
-                    className='mt-3 text-[17px] max-w-3xl leading-[30px]'
-                >
-                    Mahesh Dalle !!<br/>
-                    Bete Dalle Pe Ni Baap Tera Dalla Aa,
-                </motion.p>
-            </div>
-
             <div className='mt-20 flex flex-wrap gap-7'>
-                {projects.map((project, index) => (
+                {props.data.map((project, index) => (
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}
+
             </div>
 
         </>
     );
 };
 
-export default SectionWrapper(Works, "");
+export default Works;

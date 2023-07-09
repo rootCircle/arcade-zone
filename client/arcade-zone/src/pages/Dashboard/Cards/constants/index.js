@@ -18,7 +18,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -39,7 +39,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -60,7 +60,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -81,7 +81,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -102,7 +102,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -123,7 +123,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -144,7 +144,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -165,7 +165,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
   {
@@ -186,7 +186,7 @@ const projects = [
         color: "text-[#f4347a]",
       },
     ],
-    image: "",
+    image: "src/assets/images/BGMI.jpeg",
     source_code_link: "https://github.com/",
   },
 ];
