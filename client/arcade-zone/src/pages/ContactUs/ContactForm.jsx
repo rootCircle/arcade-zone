@@ -188,7 +188,6 @@ export default function ContactFormWithSocialButtons() {
                     _hover={{
                       bg: "blue.500",
                     }}
-                    isFullWidth
                   >
                     Send Message
                   </Button>

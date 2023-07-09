@@ -278,6 +278,11 @@ const NAV_ITEMS = [
         subLabel: 'Up-and-coming Designers',
         href: '/about',
       },
+      {
+        label: 'Dashboard',
+        subLabel: 'Up-and-coming Designers',
+        href: '/home',
+      },
     ],
   },
   {

@@ -11,13 +11,12 @@ import VerifyAccount from './pages/Register/VerifyAccount'
 import Error404 from './pages/Error404/Error404'
 import AboutUs from './pages/AboutUs/AboutUs'
 import React from 'react'
-import Works from './pages/Cards/Works'
 import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
 import Blog from './pages/Blog/Blog'
 import Gallery from "./pages/GalleryAK/gallery";
-
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
           <Route exact path="/" element={<Homepage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/card" element={<Works />} />
           <Route path="/carousel" element={<Carousel />} />
           <Route path="/forgotAccount" element={<ForgotPassword />} />
           <Route path="/login/verify" element={<VerifyAccount />} />
@@ -36,6 +34,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/blog" element={<Blog />} />
+          <Route path="/home" element={<Dashboard />}/>
           <Route path="*" element={<Error404 />} />
           <Route path="/gallery" element={<Gallery/>} />
         </Routes>
