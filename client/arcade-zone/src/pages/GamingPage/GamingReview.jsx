@@ -19,7 +19,7 @@ return(
   </div>
 </div>
 
-<div className={style.rev_cont}>
+<div className={style.rev_cont} style={{backgroundColor:"#ffd"}}>
   <p id={style.title}>Review:</p>
   <p id={style.content} style={{ color: "black" }}>
     The duration of updates is to much to begin with. The heroes
