@@ -11,7 +11,6 @@ import VerifyAccount from './pages/Register/VerifyAccount'
 import Error404 from './pages/Error404/Error404'
 import AboutUs from './pages/AboutUs/AboutUs'
 import Cards from './pages/AboutUs/Cards'
-import { createRoot } from "react-dom/client";
 import React from 'react'
 import Carousal from './pages/AboutUs/Carousal'
 import Works from './pages/Cards/Works'
