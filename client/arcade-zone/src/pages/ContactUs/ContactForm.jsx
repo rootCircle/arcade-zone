@@ -96,7 +96,7 @@ export default function ContactFormWithSocialButtons() {
                   />
                 </Tooltip>
 
-                <Link href="#">
+                <Link href="https://github.com/rootcircle/arcade-zone">
                   <IconButton
                     aria-label="github"
                     variant="ghost"
@@ -111,7 +111,7 @@ export default function ContactFormWithSocialButtons() {
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="https://twiiter.com">
                   <IconButton
                     aria-label="twitter"
                     variant="ghost"
@@ -125,7 +125,7 @@ export default function ContactFormWithSocialButtons() {
                   />
                 </Link>
 
-                <Link href="#">
+                <Link href="https://linkedin.com">
                   <IconButton
                     aria-label="linkedin"
                     variant="ghost"
