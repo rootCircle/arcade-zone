@@ -61,7 +61,8 @@ export default function WithSubnavigation() {
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
+            color={useColorModeValue('gray.800', 'white')}
+            as={ReactLink} to="/">
             <ReactIcon />
             Arcade Zone
           </Text>
@@ -268,9 +269,9 @@ const NAV_ITEMS = [
         href: '/',
       },
       {
-        label: 'New & Noteworthy',
+        label: 'Blog',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/blog',
       },
     ],
   },

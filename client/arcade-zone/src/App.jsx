@@ -18,6 +18,7 @@ import Works from './pages/Cards/Works'
 import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
+import Blog from './pages/Blog/Blog'
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/account/reset" element={<ResetPassword />} />
           <Route path="/register" element={<Register />} />
           <Route path="/about" element={<AboutUs/>}/>
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />

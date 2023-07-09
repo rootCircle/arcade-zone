@@ -13,6 +13,8 @@ import {
 } from '@chakra-ui/react';
 import { ViewIcon, ViewOffIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
+import {Link as ReactLink} from "react-router-dom";
+
 
 
 export default function RegisterAdmin() {
@@ -69,7 +71,7 @@ export default function RegisterAdmin() {
             </Stack>
             <Stack pt={6}>
                 <Text align={'center'}>
-                    Already a user? <Link color={'blue.400'}>Login</Link>
+                    Already a user? <Link color={'blue.400'} as={ReactLink} to="/login">Login</Link>
                 </Text>
             </Stack>
         </Stack>
