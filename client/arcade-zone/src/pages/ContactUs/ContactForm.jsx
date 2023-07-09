@@ -17,6 +17,7 @@ import {
   useColorModeValue,
   VStack,
 } from "@chakra-ui/react";
+import { auto } from "@popperjs/core";
 import React from "react";
 import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from "react-icons/bs";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
@@ -65,13 +66,11 @@ export default function ContactFormWithSocialButtons() {
             >
               Get in Touch
             </Heading>
-            
 
             <Stack
               spacing={{ base: 4, md: 8, lg: 20 }}
               direction={{ base: "column", md: "row" }}
             >
-                
               <Stack
                 align="center"
                 justify="space-around"
@@ -148,14 +147,14 @@ export default function ContactFormWithSocialButtons() {
                 color={useColorModeValue("gray.700", "whiteAlpha.900")}
                 shadow="base"
               >
-                <VStack spacing={5}>
-                  <FormControl isRequired>
-                    <FormLabel>Name</FormLabel>
+                <VStack spacing={10}>
+                  <FormControl isRequired width={420}>
+                    <FormLabel >Name</FormLabel>
 
-                    <InputGroup>
-                      <InputLeftElement children={<BsPerson />} />
+                    <InputGroup >
+                      <InputLeftElement children={<BsPerson />}/>
                       <Input type="text" name="name" placeholder="Your Name" />
-                    </InputGroup>
+                    </InputGroup >
                   </FormControl>
 
                   <FormControl isRequired>

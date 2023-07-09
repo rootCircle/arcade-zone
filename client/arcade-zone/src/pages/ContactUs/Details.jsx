@@ -3,6 +3,7 @@ import styles from '../../css/ContactUs/Contact.module.css'
 function Details() {
     return (
         <>
+        <div className={styles.heading}><h1><strong>About Team</strong></h1></div>
             <div className={styles.container}>
                 <div className={styles.box}>
                     <span></span>
