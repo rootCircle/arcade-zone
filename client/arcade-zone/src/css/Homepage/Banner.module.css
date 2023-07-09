@@ -22,7 +22,7 @@ body{
     position: relative;
     max-width: 100%;
     min-height: 100vh;
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,8 +31,10 @@ body{
 .banner .bg{
     position: relative;
     width: 100%;
-    min-height: 100vh;
-    display: flex;
+    /* min-height: 100vh;
+    display: flex; */
+    left: 20vmax;
+    bottom: 15vmin;
     justify-content: center;
     align-items: center;
 }
@@ -78,4 +80,25 @@ body{
 
 .banner .bg img{
     width: 650px;
+}
+
+@media (max-width:1220px){
+    .banner .bg .content h2{
+        font-size: 50px;
+    }
+}
+@media (max-width:1005px){
+    .banner .bg .content h2{
+        font-size: 40px;
+    }
+}
+@media (max-width:890px){
+    .banner .bg .content h2{
+        font-size: 2.4vmax;
+        line-height: normal;
+    }
+
+        .banner .bg{
+            bottom: 250px;
+        }
 }
