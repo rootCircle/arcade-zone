@@ -17,6 +17,7 @@ import Homepage from './pages/Homepage/HomePage'
 import Blog from './pages/Blog/Blog'
 import Gallery from './pages/Gallery/Gallery';
 import Dashboard from "./pages/Dashboard/Dashboard";
+import AdminForm from "./pages/AdminForm/AdminForm"
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/login/verify" element={<VerifyAccount />} />
           <Route path="/account/reset" element={<ResetPassword />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/AdminForm" element={<AdminForm />} />
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/blog" element={<Blog />} />
           <Route path="/home" element={<Dashboard />}/>
