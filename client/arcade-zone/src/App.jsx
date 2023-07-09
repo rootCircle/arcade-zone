@@ -9,33 +9,37 @@ import ForgotPassword from './pages/ForgotPassword/ForgotPassword'
 import ResetPassword from './pages/ForgotPassword/ResetPassword'
 import VerifyAccount from './pages/Register/VerifyAccount'
 import Error404 from './pages/Error404/Error404'
-<<<<<<< HEAD
-import AboutUs from './pages/AboutUs/Carousal'
+import AboutUs from './pages/AboutUs/AboutUs'
 import Cards from './pages/AboutUs/Cards'
 import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react'
 import Carousal from './pages/AboutUs/Carousal'
-// import Cards from './pages/AboutUs/Cards'
+import Works from './pages/Cards/Works'
+import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
+import Homepage from './pages/Homepage/HomePage'
 
 
 function App() {
   return (
     <>
       <Navbar/>
+      
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login/>}/>
+          <Route path="/" element={<Homepage/>}/>
           <Route path="/login" element={<Login/>}/>
           <Route path="/team" element={<ContactUs/>}/>
+          <Route path="/card" element={<Works/>}/>
+          <Route path="/carousel" element={<Carousel/>}/>
           <Route path="/forgotAccount" element={<ForgotPassword/>}/>
           <Route path="/login/verify" element={<VerifyAccount/>}/>
           <Route path="/account/reset" element={<ResetPassword/>}/>
           <Route path="/register" element={<Register/>}/>
           <Route path="*" element={<Error404/>} />
-          <Route path="/Cards" element={<Cards/>} />
-          <Route path="/Carousal" element={<Carousal/>} />
+          {/* <Route path="/Cards" element={<Cards/>} /> */}
+          {/* <Route path="/Carousal" element={<Carousal/>} /> */}
+          <Route path="/Aboutus" element={<AboutUs/>} />
           
         </Routes>
       </BrowserRouter>

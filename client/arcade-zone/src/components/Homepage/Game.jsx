@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, Fragment } from 'react'
 import Categories from './Categories'
-import '../../css/Homepage/Game.css'
+import style from '../../css/Homepage/Game.module.css'
 
 const Game = () => {
       
@@ -14,31 +14,31 @@ const Game = () => {
     }
 
   return (
-    <div className="games" id="games">
+    <div className={style["games"]} id={style["games"]}>
         <h1>Popular Games</h1>
         <ul>
-            <li className="list"  onClick={() => setData(Categories)}>All</li>
-            <li className="list" onClick={() => filterResult('pc')}>Pc games</li>
-            <li className="list"  onClick={() => filterResult('mobile')}>Mobile games</li>
+            <li key="all" className={style["list"]}  onClick={() => setData(Categories)}>All</li>
+            <li key="pcgame" className={style["list"]} onClick={() => filterResult('pc')}>Pc games</li>
+            <li key="mobile" className={style["list"]}  onClick={() => filterResult('mobile')}>Mobile games</li>
         </ul>
         
-        <div className="cardBx">        
+        <div className={style["cardBx"]}>        
           {data.map((values) =>{
                 const {id, title, rating, image} = values;
                 return (
-                    <>
-                        <div className="card" key={id}>
+                    <Fragment key={id}>
+                        <div className={style["card"]} key={id}>
                            <img src={image} alt="" />
-                            <div className="content">
+                            <div className={style["content"]}>
                                <h2>{title}</h2>
-                                <div className="progress-line"><span></span></div>
-                                   <div className="info">
+                                <div className={style["progress-line"]}><span></span></div>
+                                   <div className={style["info"]}>
                                    <p>Rating <br/> <span>⭐ {rating}</span></p>
                                    <a href="#">Play Now</a>
                                 </div>
                             </div>
                         </div>  
-                    </>
+                    </Fragment>
                 )
             })}
 
