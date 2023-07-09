@@ -5,8 +5,8 @@ function StaticImg() {
   return (
     <>
       <div className={styles.main}>
-        <div className={styles.inner}>
-          <h1>
+        <div className={styles.inner} style={{height:"min-content"}}>
+          <h1 style={{height:"min-content"}}>
             <strong>Perfect  Platform</strong>
           </h1>
         </div>
