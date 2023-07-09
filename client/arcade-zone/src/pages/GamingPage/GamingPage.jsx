@@ -49,6 +49,7 @@ import {
 } from "react-icons/bi";
 import {} from "react-icons/io5";
 import { color } from "framer-motion";
+
 function GamingPage(props) {
 
   const notify = () => {
