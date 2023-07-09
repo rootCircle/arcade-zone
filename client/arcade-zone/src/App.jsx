@@ -23,28 +23,23 @@ import Homepage from './pages/Homepage/HomePage'
 function App() {
   return (
     <>
-      <Navbar/>
-      
-      <BrowserRouter>
+       <BrowserRouter>
+        <Navbar />
         <Routes>
-          <Route path="/" element={<Homepage/>}/>
-          <Route path="/login" element={<Login/>}/>
-          {/* <Route path="/team" element={<ContactUs/>}/> */}
-          <Route path="/card" element={<Works/>}/>
-          <Route path="/carousel" element={<Carousel/>}/>
-          <Route path="/forgotAccount" element={<ForgotPassword/>}/>
-          <Route path="/login/verify" element={<VerifyAccount/>}/>
-          <Route path="/account/reset" element={<ResetPassword/>}/>
-          <Route path="/register" element={<Register/>}/>
-          <Route path="*" element={<Error404/>} />
-          {/* <Route path="/Cards" element={<Cards/>} /> */}
-          {/* <Route path="/Carousal" element={<Carousal/>} /> */}
-          <Route path="/Aboutus" element={<AboutUs/>} />
-          <Route path="/Contactus" element={<ContactUs />}/>
-          
+          <Route exact path="/" element={<Homepage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/team" element={<ContactUs />} />
+          <Route path="/card" element={<Works />} />
+          <Route path="/carousel" element={<Carousel />} />
+          <Route path="/forgotAccount" element={<ForgotPassword />} />
+          <Route path="/login/verify" element={<VerifyAccount />} />
+          <Route path="/account/reset" element={<ResetPassword />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/about" element={<AboutUs/>}/>
+          <Route path="*" element={<Error404 />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
-      <Footer/>
     </>
   )
 }
