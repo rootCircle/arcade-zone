@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from 'react'
 import Categories from './Categories'
 import style from '../../css/Homepage/Game.module.css'
+import { Link as ReactLink } from 'react-router-dom';
 
 const Game = () => {
       
@@ -34,7 +35,7 @@ const Game = () => {
                                 <div className={style["progress-line"]}><span></span></div>
                                    <div className={style["info"]}>
                                    <p>Rating <br/> <span>⭐ {rating}</span></p>
-                                   <a href="#">Play Now</a>
+                                   <ReactLink as={ReactLink} to={'/home'}>Play Now</ReactLink>
                                 </div>
                             </div>
                         </div>  

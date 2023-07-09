@@ -103,7 +103,7 @@ import {
               <ListHeader>Company</ListHeader>
               <Link as={ReactLink} to={'/about'}>About us</Link>
               <Link as={ReactLink} to={'/blog'}>Blog</Link>
-              <Link as={ReactLink} to={'./contact'}>Contact us</Link>
+              <Link as={ReactLink} to={'/contact'}>Contact us</Link>
               <Link href={'#'}>Pricing</Link>
               <Link href={'#'}>Testimonials</Link>
             </Stack>
