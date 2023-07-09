@@ -11,6 +11,8 @@ import {
   Image,
 } from '@chakra-ui/react';
 
+import {Link as ReactLink} from "react-router-dom";
+
 import imgBanner from '../../assets/img/signupbanner.png'
 
 export default function SplitScreen() {
@@ -33,7 +35,7 @@ export default function SplitScreen() {
               align={'start'}
               justify={'space-between'}>
               <Checkbox>Remember me</Checkbox>
-              <Link color={'blue.500'} href="/forgotAccount">Forgot password?</Link>
+              <Link color={'blue.500'} as={ReactLink} to="/forgotAccount">Forgot password?</Link>
             </Stack>
             <Button colorScheme={'blue'} variant={'solid'}>
               Sign in

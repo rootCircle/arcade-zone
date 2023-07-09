@@ -226,7 +226,7 @@ const ArticleList = () => {
 
 
             </Wrap>
-            <VStack paddingTop="40px" spacing="2" alignItems="flex-start">
+            <VStack paddingTop="5rem" spacing="2" alignItems="flex-start">
                 <Heading as="h2">What we write about</Heading>
                 <Text as="p" fontSize="lg">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
