@@ -16,6 +16,7 @@ import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
 import Blog from './pages/Blog/Blog'
+import Gallery from "./pages/GalleryAK/gallery";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
           <Route path="/about" element={<AboutUs/>}/>
           <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<Error404 />} />
+          <Route path="/gallery" element={<Gallery/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
