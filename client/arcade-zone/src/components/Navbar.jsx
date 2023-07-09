@@ -303,6 +303,11 @@ const NAV_ITEMS = [
         subLabel: 'An exclusive list for contract work',
         href: '/login/verify',
       },
+      {
+        label: 'Gallery',
+        subLabel: 'An exclusive list for contract work',
+        href: '/gallery',
+      },
     ],
   },
   {

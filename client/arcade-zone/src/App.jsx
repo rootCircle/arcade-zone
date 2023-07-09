@@ -15,7 +15,7 @@ import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
 import Blog from './pages/Blog/Blog'
-import Gallery from './pages/GalleryAK/Gallery';
+import Gallery from './pages/Gallery/Gallery';
 import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
