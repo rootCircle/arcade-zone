@@ -13,6 +13,7 @@ import Works from './pages/Cards/Works'
 import Carousel from './components/Carousel/Carousel'
 import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
+import Blog from './pages/Blog/Blog'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/login/verify" element={<VerifyAccount />} />
           <Route path="/account/reset" element={<ResetPassword />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
         <Footer />
