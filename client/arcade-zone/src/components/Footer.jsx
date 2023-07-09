@@ -82,7 +82,7 @@ import {
             spacing={8}>
             <Stack spacing={6}>
               <Box>
-                <Logo color={useColorModeValue('gray.700', 'white')} />
+                {/* <Logo color={useColorModeValue('gray.700', 'white')} /> */}
               </Box>
               <Text fontSize={'sm'}>
                 © 2023 Arcade-Zone. All rights reserved
