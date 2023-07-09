@@ -1,0 +1,204 @@
+  iframe{ 
+    width:1150px;
+    height: 580px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    display:flex;
+    flex-wrap: wrap;
+    position:relative;
+  }
+
+   .icon{
+    margin: auto;
+    display:flex; 
+    align-items: center;
+    width:1150px;
+    background-color:rgb(171, 167, 167);
+    align-items: center;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+
+   }
+   .header{
+   background-color:var(--chakra-colors-gray-900);
+   
+   /* position: fixed; */
+  background-image: url('https://external-preview.redd.it/Tf2MC-orVRAI8OL5tjyF4k4H2Q6QLHTWllekGfqdt3c.png?width=960&crop=smart&auto=webp&s=be4ab9a2fa3ca2f7011799377f118a8dbc64aacb');
+  background-size: cover;
+   width:100%;
+   height:100%;
+   color: black;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: center;
+   /* filter: blur(1px); */
+   
+ }
+ .iframeTag{
+ align-items: center;
+ align-content: center;
+ padding-top:2rem;
+ }
+  /* .name{
+     position:relative; 
+   font-family: 'Lato', sans-serif;
+   font-size:45px;
+   color: black;
+   margin-left:10px;
+  } */
+  .namee{
+  position:relative; 
+  font-family: 'Lato', sans-serif;
+  font-size:45px;
+  color: black;
+  margin-left:10px;
+ }
+
+.review {
+	/* background:var(--chakra-colors-gray-900); */
+	width: 100%;
+    margin-top: 5rem;
+    
+}
+.rev_container {
+	padding: 10px 10%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.like:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(245, 35, 35);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -40px;
+    left: 10px;
+  }
+  .dlike:hover .tltiptext {
+    visibility: visible;
+  }
+
+.tltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -10%;
+    left: 10%;
+  }
+  
+.name {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid blue;
+    border-right: 10px solid green;
+    border-bottom: 10px solid red;
+    border-left: 10px solid pink;
+        width: 40px;
+        height: 40px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+      
+      /* Safari */
+      @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }  
+      
+      .heading{
+       color: white;
+       font-weight: bolder;
+       /* background-color:gray; */
+       font-size: 50px; 
+       text-align: center;
+       margin-bottom: 3rem;
+      }
+.avatar{
+    margin-left:7%;
+    width:250%;
+    width: 250%;
+    margin-top: .5rem;
+    margin-bottom:.5rem;
+    transition: .4s ease-in-out;
+}
+/* .avatar:hover{
+    transform: scale(1.5);
+    margin-left:3rem;
+} */
+.new{
+	/* background:var(--chakra-colors-gray-900); */
+	width: 100%;
+    margin-top: 5rem;
+    display: flex;
+     flex-wrap:wrap;
+   /* background:var(--chakra-colors-gray-900); */
+}
+
+.descreption {
+	/*overflow: hidden;*/
+	width: 550px;
+	height: 300px;
+	margin-bottom: 40px;
+	/* background: rgb(183, 181, 181); */
+	display: flex;
+	/* padding: 10px; */
+	/* box-shadow: 2px 2px 20px rgba(0,0,0,0.2); */
+    border-radius: 10px;
+   
+
+}
+.new_container {
+	padding: 10px ;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    /* background:var(--chakra-colors-gray-900); */
+}
+@media screen and (max-width: 960px) {
+	iframe{
+        width:900px;
+    }
+    .icon{
+        width:900px;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    iframe{
+        width:650px;
+    }
+    .icon{
+        width:650px;
+    }
+}
+
+@media screen and (max-width: 1000px) {	
+    iframe{
+        width:900px;
+    }
+    .icon{
+        width:900px;
+    }
+}
