@@ -16,7 +16,7 @@ import Register from './pages/Register/Register'
 import Homepage from './pages/Homepage/HomePage'
 import Blog from './pages/Blog/Blog'
 import Gallery from './pages/Gallery/Gallery';
-import Dashboard from "./pages/Dashboard/Dashboard";
+import Dashboard from "./pages/Dashboard/DashBoardMain";
 
 function App() {
   return (

@@ -1,0 +1,25 @@
+.neonHeadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.neonHeading {
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 8vh;
+    font-weight: bold;
+    letter-spacing: wide;
+    /* margin-left: 5vh; */
+}
+
+.neonHeading2 {
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    font-size: 2vh;
+    font-weight: bold;
+    letter-spacing: wide;
+    margin-left: 4vh;
+}
