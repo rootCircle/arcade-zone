@@ -23,6 +23,7 @@ public class Login {
     private LoginService loginService;
 
     @PostMapping
+    @CrossOrigin
     public JwtResponsePage login(@RequestBody LoginPage user) throws Exception{
         return this.loginService.findUser(user);
     }  
