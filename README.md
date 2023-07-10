@@ -1,4 +1,5 @@
 # Arcade Zone 🎮
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ac21c9c9-a7e1-4961-a3ef-fd8891d2bb52/deploy-status)](https://app.netlify.com/sites/arcade-zone/deploys)
 
 Arcade Zone is a game catalogue website built using ReactJS. It allows users to browse and search a large collection of games, view their details, and play them online.
@@ -9,38 +10,47 @@ To run the project locally, do the following:
 
 1. Clone the Git repository:
 
-    ```
+    ``` bash
     git clone https://github.com/rootCircle/arcade-zone.git
     ```
 
 2. Navigate to the project directory:
 
-    ```
+    ``` bash
     cd arcade-zone/client/arcade-zone
     ```
 
 3. Install the required dependencies using either Yarn or NPM:
 
-    ```
+    ``` bash
     yarn
     ```
+
     or
 
-    ```
+    ``` bash
     npm i
     ```
 
 4. Start the development server:
 
-    ```
+    ``` bash
     yarn dev
     ```
 
     or
 
-    ```
+    ``` bash
     npm run dev
     ```
+
+## Server Setup
+
+1. cd into `server/game-login-sinup`
+
+2. Run `mvn compile` and `mvn package`.
+
+3. To run the server run `./mnvw spring-boot:run`
 
 ## Project Structure 🏗
 
@@ -52,6 +62,7 @@ The project is organized as follows:
 - package.json: Defines the project dependencies and scripts.
 
 ## Contributing 🤝
+
 If you would like to contribute to Arcade Zone, please follow these steps:
 
 1. Create a fork of the project.
@@ -62,5 +73,7 @@ If you would like to contribute to Arcade Zone, please follow these steps:
 Please ensure that any code you contribute adheres to the coding standards and guidelines established by the project maintainers.
 
 ## Resources 📚
+
 - [GitHub repository](https://github.com/rootCircle/arcade-zone)
+
 - [Issue tracker](https://github.com/rootCircle/arcade-zone/issues)
