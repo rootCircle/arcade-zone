@@ -12,7 +12,7 @@ const Banner = () => {
                 Game Lovers
                 </h2>
                 <p>Are you ready to embark on an exhilarating gaming adventure?
-                Join us at GameLair and get ready to immerse yourself in a world of gaming excitement. 
+                Join us at Arcade-Zone and get ready to immerse yourself in a world of gaming excitement. 
                 </p>
                 <a href="#" className={style["btn"]}>Join Now</a>
             </div>
