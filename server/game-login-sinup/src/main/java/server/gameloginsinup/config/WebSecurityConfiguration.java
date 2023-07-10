@@ -40,7 +40,7 @@ public class WebSecurityConfiguration {
                 http.cors();
         http
                 .csrf(AbstractHttpConfigurer::disable)
-                .authorizeHttpRequests(request -> request.requestMatchers("/login","/register/user","/register/admin","/roles")
+                .authorizeHttpRequests(request -> request.requestMatchers("/login","/register/user","/register/admin","/roles","/forget/*", "/forget/email/**"  )
                         .permitAll()
                         .requestMatchers(org.springframework.http.HttpHeaders.ALLOW).permitAll()
                         .anyRequest().authenticated())

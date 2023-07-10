@@ -34,7 +34,7 @@ public class EmailService {
         // String message = emailPage.getMessage();
         // String description = emailPage.getDescription();
 
-        String from = "lcs2022027@iiitl.ac.in";
+        String from = "changetorealemail@google.ac.in";
 
         // Variable for gmail
         String host = "smtp.gmail.com";
@@ -53,7 +53,7 @@ public class EmailService {
 
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication(){
-                return new PasswordAuthentication("lcs2022027@iiitl.ac.in","*********");
+                return new PasswordAuthentication("changetorealemail@google.ac.in","***********");
             }
         });
 
@@ -78,7 +78,7 @@ public class EmailService {
             m.setSubject("Password change : ");
 
             // adding text to message
-            m.setText("Password token"+passwordToken);
+            m.setText("Password token: http://localhost:5173/account/reset?id="+passwordToken);
 
             // send
 

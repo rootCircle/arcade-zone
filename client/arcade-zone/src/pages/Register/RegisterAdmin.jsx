@@ -35,6 +35,7 @@ export default function RegisterAdmin() {
             "password":password
         }).then((response) => {
             console.log(response)
+            alert("Registered successfully!")
         }).catch((e) => {
             console.log("Error")
         })

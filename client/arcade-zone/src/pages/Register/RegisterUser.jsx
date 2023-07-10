@@ -49,6 +49,7 @@ export default function RegisterUser() {
         }
         ).then((response) => {
             console.log(response)
+            alert("Registered successfully!")
         }).catch((e) => {
             console.log(e)
         })

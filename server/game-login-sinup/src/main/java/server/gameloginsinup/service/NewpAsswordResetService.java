@@ -24,7 +24,10 @@ public class NewpAsswordResetService {
         UserTable User = userDao.findByEmail(user.getEmail());
         String passwdtoken = user.getPasswordTokengiven();
 
-        if(User!=null && User.getPasswordToken().matches(passwdtoken)){
+        System.out.println(passwdtoken);
+        System.out.println(User.getPasswordToken());
+
+        if(User!=null && User.getPasswordToken().equalsIgnoreCase(passwdtoken)){
             // String Password= User.setPassword(user.getPassword());
             User.setPassword(getEncodedPassword(user.getPassword()));
             userDao.save(User);

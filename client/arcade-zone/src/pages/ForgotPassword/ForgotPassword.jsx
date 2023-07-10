@@ -8,9 +8,40 @@ import {
     Text,
     useColorModeValue,
 } from '@chakra-ui/react';
+import axios from 'axios'
+import { useState } from 'react';
+import { useToast } from '@chakra-ui/react'
 
 
 export default function ForgotPasswordForm() {
+    const toast = useToast()
+    const [email, setEmail] = useState("");
+
+    function handleSubmit() {
+        axios.post(`http://localhost:8080/forget/email/${email}`).then(
+            (response) => {
+                if (response.data === "Successfully Send "){
+                    toast({
+                        title: `Mail send successfully`,
+                        status: "success",
+                        isClosable: true,
+                        duration: 9000,
+                      })
+                }
+                else {
+                    toast({
+                        title: response.data || `Some issue occured`,
+                        status: "error",
+                        isClosable: true,
+                        duration: 9000,
+                      })
+                }
+            }
+        ).catch((error) => {
+            console.log("error" + error)
+        })
+    }
+
     return (
         <Flex
             minH={'100vh'}
@@ -39,11 +70,13 @@ export default function ForgotPasswordForm() {
                         placeholder="your-email@example.com"
                         _placeholder={{ color: 'gray.500' }}
                         type="email"
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </FormControl>
                 <Stack spacing={6}>
                     <Button
                         bg={'blue.400'}
+                        onClick={handleSubmit}
                         color={'white'}
                         _hover={{
                             bg: 'blue.500',
