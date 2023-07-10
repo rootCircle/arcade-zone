@@ -2,7 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ac21c9c9-a7e1-4961-a3ef-fd8891d2bb52/deploy-status)](https://app.netlify.com/sites/arcade-zone/deploys)
 
-Arcade Zone is a game catalogue website built using ReactJS. It allows users to browse and search a large collection of games, view their details, and play them online.
+Arcade Zone is a game catalogue website built using ReactJS. 
+It allows users to browse and search a large collection of games, view their details, and play them online.
 
 ## Installation ⚙
 
