@@ -10,15 +10,32 @@ import {
 } from '@chakra-ui/react';
 import axios from 'axios'
 import { useState } from 'react';
+import { useToast } from '@chakra-ui/react'
+
 
 export default function ForgotPasswordForm() {
+    const toast = useToast()
     const [email, setEmail] = useState("");
 
     function handleSubmit() {
         axios.post(`http://localhost:8080/forget/email/${email}`).then(
             (response) => {
-                console.log(response)
-                alert("If your mail exists in our system, then a mail will be sent to you!")
+                if (response.data === "Successfully Send "){
+                    toast({
+                        title: `Mail send successfully`,
+                        status: "success",
+                        isClosable: true,
+                        duration: 9000,
+                      })
+                }
+                else {
+                    toast({
+                        title: response.data || `Some issue occured`,
+                        status: "error",
+                        isClosable: true,
+                        duration: 9000,
+                      })
+                }
             }
         ).catch((error) => {
             console.log("error" + error)

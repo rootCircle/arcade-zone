@@ -9,5 +9,5 @@ public class GameLoginSinupApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GameLoginSinupApplication.class, args);
 	}
-
+	
 }

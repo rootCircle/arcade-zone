@@ -44,7 +44,7 @@ export default function SplitScreen() {
       const res = response.json().
         then((respy) => { 
           console.log(respy) 
-          sessionStorage.setItem('token', JSON.stringify(respy))
+          sessionStorage.setItem('jwtToken', JSON.stringify(respy))
           window.location.href="/home";
         })
         .catch((e) => {

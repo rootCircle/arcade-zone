@@ -8,8 +8,27 @@ import {
     Stack,
     useColorModeValue,
   } from '@chakra-ui/react';
-  
+import { useEffect, useState } from 'react';
+  import { useSearchParams } from "react-router-dom";
+  import axios from 'axios';
+
   export default function ResetPasswordForm() {
+    let [searchParams, setSearchParams] = useSearchParams();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    function handleSubmit() {
+      console.log(searchParams.get('id'))
+      axios.post('http://localhost:8080/forget/newPassword', {
+        "email": email,
+        "password":password,
+        "passwordTokengiven":searchParams.get('id')
+      }).then((res)=>{console.log(res)
+      alert("Account reset successfully!")})
+    }
+
+
+
     return (
       <Flex
         minH={'100vh'}
@@ -34,14 +53,16 @@ import {
               placeholder="your-email@example.com"
               _placeholder={{ color: 'gray.500' }}
               type="email"
+              onChange={(e) => {setEmail(e.target.value)}}
             />
           </FormControl>
           <FormControl id="password" isRequired>
             <FormLabel>Password</FormLabel>
-            <Input type="password" />
+            <Input type="password" onChange={(e) => {setPassword(e.target.value)}} />
           </FormControl>
           <Stack spacing={6}>
             <Button
+              onClick={handleSubmit}
               bg={'blue.400'}
               color={'white'}
               _hover={{

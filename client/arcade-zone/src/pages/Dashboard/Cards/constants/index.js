@@ -1,20 +1,19 @@
-//! Photos import kara lena yha pe bsdk
 const projects = [
   {
-    name: "Competitve Programming",
+    name: "BGMI",
     description:
-    "Students may hone their coding abilities and get ready for competitive programming competitions by attending seminars and training sessions held. Prveen Madarchod",
+    "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reach even higher distances. Watch out though - Bill's stout neck is not what it used to be",
     tags: [
       {
-        name: "cses",
+        name: "Clash Royal",
         color: "text-[#48b1f0]",
       },
       {
-        name: "STL",
+        name: "Shadow Fight-2",
         color: "text-[#26c383]",
       },
       {
-        name: "logic",
+        name: "Alien Shooter",
         color: "text-[#f4347a]",
       },
     ],
@@ -22,20 +21,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Web Development",
+    name: "CriticalOPS",
     description:
-      "The Web Development wing conducts training sessions to help students improve their skills in areas such as HTML, CSS, JavaScript, and web frameworks like React, Angular, and Vue",
+      "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reach even higher distances. Watch out though - Bill's stout neck is not what",
     tags: [
       {
-        name: "react",
+        name: "BGMI",
         color: "text-[#48b1f0]",
       },
       {
-        name: "JS",
+        name: "Free fire",
         color: "text-[#26c383]",
       },
       {
-        name: "scss",
+        name: "Genshin Impact",
         color: "text-[#f4347a]",
       },
     ],
@@ -43,20 +42,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Machine Learning",
+    name: "Pacman",
     description:
-      "The AI-ML wing holds training sessions to assist students in honing their abilities in data analysis, data preprocessing, machine learning algorithms, and deep learning as well as deployment.",
+      "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reac",
     tags: [
       {
-        name: "CV",
+        name: "##",
         color: "text-[#48b1f0]",
       },
       {
-        name: "NLP",
+        name: "#best",
         color: "text-[#26c383]",
       },
       {
-        name: "AI",
+        name: "##fire",
         color: "text-[#f4347a]",
       },
     ],
@@ -64,20 +63,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Free and Open Source Software",
+    name: "Need for speed",
     description:
-      "The FOSS wing hones student in Collaborative working and contributing to projects on Github . It provides insights into open source techniques and contests.",
+      "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reach even higher distances. Watch out though - Bill's stout neck is not what it ",
     tags: [
       {
-        name: "git",
+        name: "gi#t",
         color: "text-[#48b1f0]",
       },
       {
-        name: "repo",
+        name: "rep$#o",
         color: "text-[#26c383]",
       },
       {
-        name: "fork",
+        name: "fo#%rk",
         color: "text-[#f4347a]",
       },
     ],
@@ -85,20 +84,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "App Development",
+    name: "GTA VOICY CITY",
     description:
       "It teaches students iOS app development, Android app development, cross-platform app development, and app design. The workshops cover topics such as app development fundamentals, and app testing.",
     tags: [
       {
-        name: "nextjs",
+        name: "ne#x%tjs",
         color: "text-[#48b1f0]",
       },
       {
-        name: "supabase",
+        name: "su@pab%ase",
         color: "text-[#26c383]",
       },
       {
-        name: "css",
+        name: "c@s%s",
         color: "text-[#f4347a]",
       },
     ],
@@ -106,20 +105,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Information Security",
+    name: "Teen Patti",
     description:
       "It imparts skills in areas such as network security, web application security, cryptography, and ethical hacking. The workshops cover topics such as cyber threats, cyber attacks, and countermeasures.",
     tags: [
       {
-        name: "CTF",
+        name: "C*T&F",
         color: "text-[#48b1f0]",
       },
       {
-        name: "Linux",
+        name: "Li%nu#x",
         color: "text-[#26c383]",
       },
       {
-        name: "python",
+        name: "p@yt%hon",
         color: "text-[#f4347a]",
       },
     ],
@@ -127,20 +126,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Design and UI",
+    name: "MPL",
     description:
-      "It helps students improve their skills in areas such as design principles, typography, colour theory, and design tools such as Adobe Photoshop, Illustrator, Canva and Sketch.",
+      "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reach even higher distances. Watch out thou",
     tags: [
       {
-        name: "canva",
+        name: "ca$n$va",
         color: "text-[#48b1f0]",
       },
       {
-        name: "visual",
+        name: "vi#su#al",
         color: "text-[#26c383]",
       },
       {
-        name: "css",
+        name: "c$s$s",
         color: "text-[#f4347a]",
       },
     ],
@@ -148,20 +147,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Blockchain Technology",
+    name: "Valorent",
     description:
-      "The Blockchain wing provides training sessions and events to help students learn about blockchain technology and showcase their skills. My name is Monark Jain",
+      "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reach even higher distances. Watch out though - Bill's stout neck is not what it used to be",
     tags: [
       {
-        name: "Etherium",
+        name: "Et%he$r#ium",
         color: "text-[#48b1f0]",
       },
       {
-        name: "solidity",
+        name: "sol#i$d%ity",
         color: "text-[#26c383]",
       },
       {
-        name: "bitcoin",
+        name: "b@it$co%in",
         color: "text-[#f4347a]",
       },
     ],
@@ -169,20 +168,20 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "E-cell",
+    name: "Dream -11",
     description:
-      "A student-run organization empowering students to become entrepreneurs and turn their ideas into reality,.It offers speaker sessions, startup contests, and funding. ",
+      "One of the most addictive and entertaining physics based driving game ever made! And it'sace the challenges of unique hill climbing environments with many different cars. Gain bonuses from daring tricks and collect coins to upgrade your car and reach even higher distances. Watch out though - Bill's stout neck is not what it used to  ",
     tags: [
       {
-        name: "finance",
+        name: "fi%na%n^ce",
         color: "text-[#48b1f0]",
       },
       {
-        name: "enspire",
+        name: "en#s%pi*re",
         color: "text-[#26c383]",
       },
       {
-        name: "incubation",
+        name: "in#cu$ba@tion",
         color: "text-[#f4347a]",
       },
     ],

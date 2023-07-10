@@ -3,6 +3,18 @@ import { projects } from "./Cards/constants";
 import Search from "./Search/Search";
 import { useEffect, useState, useRef } from "react";
 import { Box, Heading } from "@chakra-ui/react";
+import { redirect, useNavigate } from "react-router-dom";
+import { useToast } from '@chakra-ui/react'
+
+export function loader({ req }) {
+
+  console.log(sessionStorage.getItem("jwtToken") == null);
+  if (sessionStorage.getItem("jwtToken") == null) {
+    throw redirect("/gallery");
+  }
+  return null;
+}
+
 
 function jaroWinkler(s, t) {
   // Calculate length of both strings
@@ -106,11 +118,25 @@ function jaroWinklerSimilarity(s1, s2) {
 }
 
 const Dashboard = () => {
+  const toast = useToast()
   const handleInputChange = (e) => {
     setInput(e.target.value);
   };
+  const navigate=useNavigate();
   const [input, setInput] = useState("");
   const THRESHOLD = 0.7;
+  useEffect(()=>{
+    if (sessionStorage.getItem("jwtToken") == null) {
+      toast({
+        title: 'Invalid token',
+        description: "Login First.",
+        status: 'error',
+        duration: 9000,
+        isClosable: true,
+      })
+      navigate("/");
+    }
+  },[])
 
   return (
     <>
