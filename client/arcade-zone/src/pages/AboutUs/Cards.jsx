@@ -18,12 +18,11 @@ function Cards() {
             <h5
               className={`${styles["neontext1"]} mb-2 text-xl font-medium `}
             >
-              smart work
+              Facility
             </h5>
             <p className={`${styles["neontext1"]} mb-4 text-base `}>
-            Through collaboration, teams become more than the sum of their parts.
-             They become a unified force, capable of accomplishing remarkable feats. Whether it's in sports, 
-             business, or any other endeavor, the power of teamwork is undeniable.
+            This website offers easy accessibility and an engaging learning experience, 
+            enhancing excitement and uniqueness before diving into any games.
             </p>
           </div>
         </div>
@@ -42,12 +41,16 @@ function Cards() {
             <h5
               className={`${styles["neontext2"]} mb-2 text-xl font-medium `}
             >
-              hard work
+               Arcade-Zone
             </h5>
             <p className={`${styles["neontext2"]} mb-4 text-base `}>
-            emphasizing its transformative power and its ability to turn goals into tangible outcomes. 
-            It acknowledges that hard work is the driving force behind success, highlighting its importance 
-            in the pursuit of one's dreams
+            This gaming website not only offers an exceptional user experience but also
+             comes completely free of cost, setting it apart from other platforms that 
+             may charge for similar services.
+
+
+             
+        
             </p>
           </div>
         </div>
@@ -66,11 +69,12 @@ function Cards() {
             <h5
               className={`${styles["neontext3"]} mb-2 text-xl font-medium `}
             >
-              leadership
+              Easy to excess
             </h5>
             <p className={`${styles["neontext3"]} mb-4 text-base `}>
-            A true leader leads by example, demonstrating integrity, humility, and empathy in their interactions
-             with others.
+            This site offers fundamental learning resources, enabling users to grasp the 
+            essential elements of a game before immersing themselves in an enjoyable gameplay 
+            experience.
             </p>
           </div>
         </div>
@@ -89,11 +93,11 @@ function Cards() {
             <h5
               className={`${styles["neontext4"]} mb-2 text-xl font-medium `}
             >
-              games
+             Free of cost
             </h5>
             <p className={`${styles["neontext4"]} mb-4 text-base `}>
-            "Games have the remarkable ability to transport us to new worlds, ignite our imagination, and unleash 
-            our inner adventurers."
+            This website is equipped with additional features that enhance the overall gaming 
+            experience, ensuring users have the best possible time while playing.
             </p>
           </div>
         </div>
