@@ -34,6 +34,7 @@ public class GameRegister {
         String game_link = game.getGame_link();
 
         String  game_img_name = file.getOriginalFilename();
+        String game_dec = game.getGame_desc();
 
         final String filePath = new ClassPathResource("static/img").getFile().getAbsolutePath();
 
@@ -50,9 +51,9 @@ public class GameRegister {
                 .game_name(name)
                 .game_link(game_link)
                 .game_image_name(game_img_name)
+                .game_desc(game_dec)
                 .filePath(filePath+"/"+file.getOriginalFilename())
                 .build());      
-
         if (Game != null) {
             return true;
         }
@@ -103,5 +104,18 @@ public class GameRegister {
         String filePath=fileData.get().getFilePath();
         byte[] images = Files.readAllBytes(new File(filePath).toPath());
         return images;
+    }
+
+
+    public GameTable gAmeById(Long id){
+
+        List<GameTable>  game = gameDao.findAll();
+
+        Optional<GameTable> gameFound = game.stream()
+            .filter(data -> data.getGame_id() == id)
+            .findFirst();
+        
+        return gameFound.get();
+        
     }
 }

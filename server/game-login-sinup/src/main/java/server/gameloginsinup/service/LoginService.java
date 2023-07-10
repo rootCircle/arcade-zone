@@ -38,15 +38,21 @@ public class LoginService implements UserDetailsService{
 
         String email = user.getEmail();
         String password = user.getPassword();
+        UserTable User = userDao.findByEmail(email);
+
+        if(User!=null){
         authenticate(email,password);
 
         UserDetails userDetails = loadUserByUsername(email);
         String newGeneratedToken = jwtUtil.generateToken(userDetails);
 
 
-        UserTable User = userDao.findByEmail(email);
 
-        return new JwtResponsePage(newGeneratedToken,User);
+        return new JwtResponsePage(newGeneratedToken,User);}
+        else{
+            throw new Exception("Email are not found");
+        }
+
     }
 
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {

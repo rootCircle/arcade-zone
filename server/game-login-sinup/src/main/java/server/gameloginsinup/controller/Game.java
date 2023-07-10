@@ -97,4 +97,10 @@ public class Game {
                 .contentType(org.springframework.http.MediaType.valueOf("image/png"))
                 .body(imageData);
     }
+
+    @GetMapping("/gamebyid/{id}")
+    @PreAuthorize("hasRole('Admin', 'User')")
+    public GameTable getGameById(@PathVariable long id) {
+        return this.gamGameRegister.gAmeById(id);
+    } 
 }

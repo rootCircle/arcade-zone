@@ -34,6 +34,9 @@ public class GameTable {
     @Column(name = "image_name")
     private String game_image_name;
 
+    @Column(name = "game_desc")
+    private String game_desc;
+    
     @Column(name = "filePath")
     public String filePath;
 }
