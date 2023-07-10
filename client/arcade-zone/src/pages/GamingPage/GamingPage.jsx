@@ -209,10 +209,10 @@ function GamingPage(props) {
             <h1>Rating and Reviews</h1>
           </div>
           <div className={style.rev_container}>
-            <GamingCardReview />
-            <GamingCardReview />
-            <GamingCardReview />
-            <GamingCardReview />
+            <GamingCardReview imageURL={'https://images.unsplash.com/photo-1520810627419-35e362c5dc07?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ'} name='Lindsey James' reviewText={' like this game a lot. It is very fun and addicting. I like that when you do a challenge, you get a cool new skin. Also that all of the challenges are very well thought up. If you want something easy you have it, and if you want something hard you have it.'}/>
+            <GamingCardReview imageURL={'https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/06/06/15/Chris-Pratt.jpg'} name='Jake Paul' reviewText={'*There are so many ads on this game that I can’t click touch to continue, If you completely got rid of ads this game just might be way better. **Another thing eliminating yourself!'}/>
+            <GamingCardReview imageURL={'https://image.cnbcfm.com/api/v1/image/107228941-1682027700192-_DSC5658.jpg?v=1682427601&w=1920&h=1080'} name='Ram Charan' reviewText={'The game is fun I will not lie but you don’t even update it. I have played some of you games before and I did like them a bit but a main problem is you don’t really update them and just make a new game with a bunch of ads.'}/>
+            <GamingCardReview imageURL={'https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/27/08/jennifer-lawrence.jpg'} name='Jennifer Lawrence' reviewText={' This game is simple, and addictive, and can be a fast play, or extended out if you are slow and methodical in your acquisition of territory.'}/>
           </div>
 
           <br/>

@@ -18,12 +18,11 @@ function Cards() {
             <h5
               className={`${styles["neontext1"]} mb-2 text-xl font-medium `}
             >
-              Card title
+              Facility
             </h5>
             <p className={`${styles["neontext1"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            This website offers easy accessibility and an engaging learning experience, 
+            enhancing excitement and uniqueness before diving into any games.
             </p>
           </div>
         </div>
@@ -42,12 +41,16 @@ function Cards() {
             <h5
               className={`${styles["neontext2"]} mb-2 text-xl font-medium `}
             >
-              Card title
+               Arcade-Zone
             </h5>
             <p className={`${styles["neontext2"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            This gaming website not only offers an exceptional user experience but also
+             comes completely free of cost, setting it apart from other platforms that 
+             may charge for similar services.
+
+
+             
+        
             </p>
           </div>
         </div>
@@ -66,12 +69,12 @@ function Cards() {
             <h5
               className={`${styles["neontext3"]} mb-2 text-xl font-medium `}
             >
-              Card title
+              Easy to excess
             </h5>
             <p className={`${styles["neontext3"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            This site offers fundamental learning resources, enabling users to grasp the 
+            essential elements of a game before immersing themselves in an enjoyable gameplay 
+            experience.
             </p>
           </div>
         </div>
@@ -90,12 +93,11 @@ function Cards() {
             <h5
               className={`${styles["neontext4"]} mb-2 text-xl font-medium `}
             >
-              Card title
+             Free of cost
             </h5>
             <p className={`${styles["neontext4"]} mb-4 text-base `}>
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
+            This website is equipped with additional features that enhance the overall gaming 
+            experience, ensuring users have the best possible time while playing.
             </p>
           </div>
         </div>

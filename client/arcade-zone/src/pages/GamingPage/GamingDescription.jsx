@@ -46,7 +46,10 @@ import {
     <Heading size='xl'>Game Description</Heading>
     </CardHeader>
     <CardBody>
-        Hello my name si monark jain, this is a fantastic page made by Mrs mnaish Rawat. Using I frame. Akshaj is my son and praveen also and udit also. Are mai to papa hu raja hu,poori duniya ka papa ~ JACK the DON
+    Welcome to Paper.io 2, the ultimate conquest game from Voodoo! Conquer as much territory as possible and beat the competition with a smooth drawing experience!
+Our game offers exciting and challenging gameplay that will keep you engaged for hours. With each level, you’ll face new obstacles and enemies, but don’t worry - with your strategic skills, you’ll be able to overcome them all.
+
+
     </CardBody>
     
   </Card>
