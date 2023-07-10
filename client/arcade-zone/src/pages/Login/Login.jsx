@@ -11,6 +11,8 @@ import {
   Image,
 } from '@chakra-ui/react';
 
+import { redirect } from 'react-router-dom';
+
 import { useState } from 'react';
 
 import { Form, Link as ReactLink } from "react-router-dom";
@@ -40,7 +42,11 @@ export default function SplitScreen() {
     }
     ).then((response) => {
       const res = response.json().
-        then((respy) => { console.log(respy) })
+        then((respy) => { 
+          console.log(respy) 
+          sessionStorage.setItem('token', JSON.stringify(respy))
+          window.location.href="/home";
+        })
         .catch((e) => {
           console.log(e);
         });

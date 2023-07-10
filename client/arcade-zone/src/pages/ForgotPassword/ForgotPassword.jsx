@@ -8,9 +8,23 @@ import {
     Text,
     useColorModeValue,
 } from '@chakra-ui/react';
-
+import axios from 'axios'
+import { useState } from 'react';
 
 export default function ForgotPasswordForm() {
+    const [email, setEmail] = useState("");
+
+    function handleSubmit() {
+        axios.post(`http://localhost:8080/forget/email/${email}`).then(
+            (response) => {
+                console.log(response)
+                alert("If your mail exists in our system, then a mail will be sent to you!")
+            }
+        ).catch((error) => {
+            console.log("error" + error)
+        })
+    }
+
     return (
         <Flex
             minH={'100vh'}
@@ -39,11 +53,13 @@ export default function ForgotPasswordForm() {
                         placeholder="your-email@example.com"
                         _placeholder={{ color: 'gray.500' }}
                         type="email"
+                        onChange={(e) => setEmail(e.target.value)}
                     />
                 </FormControl>
                 <Stack spacing={6}>
                     <Button
                         bg={'blue.400'}
+                        onClick={handleSubmit}
                         color={'white'}
                         _hover={{
                             bg: 'blue.500',

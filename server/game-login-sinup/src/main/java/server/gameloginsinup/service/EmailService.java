@@ -53,7 +53,7 @@ public class EmailService {
 
         Session session = Session.getInstance(properties, new javax.mail.Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication(){
-                return new PasswordAuthentication("lcs2022027@iiitl.ac.in","*********");
+                return new PasswordAuthentication("lcs2022027@iiitl.ac.in","Krishna@2002");
             }
         });
 
