@@ -17,4 +17,6 @@ public interface GameDao extends JpaRepository<GameTable,Long>{
 
     // @Query(value = "SELECT * FROM game_database where game_id=?1" ,nativeQuery = true)
     // public Optional<GameTable> findGame_id(Long game_id);
+    @Query(value = "SELECT * FROM game_database where game_id=?1" ,nativeQuery = true)
+    public Optional<GameTable> findById(Long game_id);
 }

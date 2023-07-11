@@ -2,6 +2,7 @@ package server.gameloginsinup.controller;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 import org.apache.tomcat.util.http.parser.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import server.gameloginsinup.dao.GameDao;
 import server.gameloginsinup.dao.Role_modle;
 import server.gameloginsinup.dao.UserDao;
 import server.gameloginsinup.entity.GameTable;
@@ -37,6 +39,8 @@ public class Game {
 
     @Autowired
     private UserDao userDao;
+    @Autowired
+    private GameDao gameDao;
 
     @Autowired
     private Role_modle roleDoa;
@@ -65,6 +69,14 @@ public class Game {
     // public String addGame() {
     //     return " User can't be uploade";
     // }
+
+    @GetMapping("/{gameId}")
+    @PreAuthorize("hasRole('User,Admin')")
+    public ResponseEntity<?> getGameById(@PathVariable Long gameId){
+       
+        Optional<GameTable> specificGame = this.gameDao.findById(gameId);
+        return ResponseEntity.ok(specificGame);
+    }
 
     @GetMapping
     @PreAuthorize("hasRole('User,Admin')")
