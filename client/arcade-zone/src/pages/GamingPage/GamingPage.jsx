@@ -39,6 +39,29 @@ import {} from "react-icons/io5";
 import { color } from "framer-motion";
 
 function GamingPage(props) {
+  useEffect(()=>{
+     const url = window.location.href;
+
+    // Extract the query parameters
+    const params = new URLSearchParams(new URL(url).search);
+
+    // Retrieve the value of the 'id' parameter
+    const idValue = params.get('id');
+
+    // Log the ID value to the console
+    console.log("ID:", idValue);
+    const token = sessionStorage.getItem("JWT")
+
+    fetch(`http://localhost:5173/game/${idValue}`,{
+        mode:'cors',
+        method:'GET',
+        headers:{'Authorization':"Bearer "+ token}
+    })
+    .then((res)=>{
+      console.log(res)
+    })
+      
+  },[])
 
   const notify = () => {
     toast("Hello gamers");
